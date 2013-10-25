@@ -1,10 +1,6 @@
-BEGIN {
-	@classes = qw([% module %]);
-	}
+use Test::More;
 
-use Test::More tests => scalar @classes;
+my $compile = `$^X -c blib/script/rhich`;
+like( $compile, qr/OK/, 'rhich compiled OK' );
 
-foreach my $class ( @classes )
-	{
-	print "Bail out! $class did not compile\n" unless use_ok( $class );
-	}
+done_testing();
