@@ -21,7 +21,8 @@ a sequence is a regex.
 
 =head1 DESCRIPTION
 
-rhich(1) 
+rhich(1) goes through the directories listed in PATH and lists files
+that match the regular expression given sas the argument.
 
 =head1 COPYRIGHT AND LICENCE
 
@@ -33,13 +34,13 @@ You may use this under the same terms as Perl itself.
 
 brian d foy, C<< <bdfoy@cpan.org> >>
 
-=end
-
 =cut
 
 use File::Spec;
 
 my $regex = $ARGV[0];
+
+# XXX: do some regex cleaning here
 
 my @paths = get_path_components();
 
