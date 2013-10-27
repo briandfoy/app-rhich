@@ -1,9 +1,10 @@
 #!/usr/bin/perl
+package rhich;
 use strict;
 use warnings;
 use vars qw($VERSION);
 
-$VERSION = '1.001';
+$VERSION = '1.002';
 
 =encoding utf8
 
@@ -38,9 +39,14 @@ brian d foy, C<< <bdfoy@cpan.org> >>
 
 use File::Spec;
 
-my $regex = $ARGV[0];
+my $regex = eval qr/$ARGV[0]/;
+unless( defined $regex ) {
+	die "Could not compile regex! $@\n";
+	}
 
 # XXX: do some regex cleaning here
+# take out (?{}) and (?{{}})
+
 
 my @paths = get_path_components();
 
