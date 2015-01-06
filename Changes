@@ -1,9 +1,9 @@
 Revision history for Perl module rhich
 
-1.02 - Sun Oct 27 13:15:13 2013
+1.02 - 2013-10-27
 	* Add a package name to the script
 
-1.01 - Sun Oct 27 11:35:17 2013
+1.01 - 2013-10-27
 	* First release of my rhich utility to do which (1) with
 	a regex
 	* This was a Learning Perl challenge:
