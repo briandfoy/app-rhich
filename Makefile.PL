@@ -1,10 +1,12 @@
 require 5.008;
+
+use File::Spec::Functions qw(catfile);
 use strict;
 use warnings;
 
-use File::Spec::Functions qw(catfile);
+package App::rhich;
 
-my $module    = 'App::rhich';
+my $module    = __PACKAGE__;
 ( my $dist = $module ) =~ s/::/-/g;
 
 my $github    = 'https://github.com/briandfoy/rhich';
