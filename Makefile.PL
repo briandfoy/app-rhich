@@ -49,7 +49,7 @@ my %WriteMakefile = (
 			},
 		},
 
-	clean  => { FILES    => q|rhich-*| },
+	clean  => { FILES    => "$dist-*" },
 	);
 
 sub arguments { \%WriteMakefile }
