@@ -1,10 +1,10 @@
 require 5.008;
 
-use File::Spec::Functions qw(catfile);
+package App::rhich;
 use strict;
 use warnings;
 
-package App::rhich;
+use File::Spec::Functions qw(catfile);
 
 my $module    = __PACKAGE__;
 ( my $dist = $module ) =~ s/::/-/g;
