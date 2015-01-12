@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-package rhich;
+package App::rhich;
 use strict;
 use warnings;
 use vars qw($VERSION);
@@ -10,7 +10,7 @@ $VERSION = '1.002';
 
 =head1 NAME
 
-rhich - which(1) with a regex
+App::rhich - which(1) with a regex
 
 =head1 SYNOPSIS
 
