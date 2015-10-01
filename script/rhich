@@ -39,7 +39,7 @@ brian d foy, C<< <bdfoy@cpan.org> >>
 
 use File::Spec;
 
-my $regex = eval qr/$ARGV[0]/;
+my $regex = eval { qr/$ARGV[0]/ };
 unless( defined $regex ) {
 	die "Could not compile regex! $@\n";
 	}
