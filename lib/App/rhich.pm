@@ -10,20 +10,20 @@ $VERSION = '1.002';
 
 =head1 NAME
 
-App::rhich - which(1) with a regex
+App::rhich - which(1) with a Perl regex
 
 =head1 SYNOPSIS
 
-Run this program like you would which(1), but give is a regex. Even
+Run this program like you would which(1), but give is a Perl regex. Even
 a sequence is a regex.
 
 	% rhich perl
-	% rhich p*rl
+	% rhich p.*rl
 
 =head1 DESCRIPTION
 
 rhich(1) goes through the directories listed in PATH and lists files
-that match the regular expression given sas the argument.
+that match the regular expression given as the argument.
 
 =head1 COPYRIGHT AND LICENCE
 
@@ -69,19 +69,19 @@ foreach my $path ( @paths ) {
 				else { $_ }
 				}
 			grep    { -x }
-			map     { File::Spec->catfile( $path, $_ ) } 
-			grep    { /$regex/ } 
+			map     { File::Spec->catfile( $path, $_ ) }
+			grep    { /$regex/ }
 			readdir $dh;
-	
+
 		next unless @commands;
 
 		print join "\n", @commands, '';
 		}
 	else {
-		warn "$0: could not read directory for $path: $!\n";    
+		warn "$0: could not read directory for $path: $!\n";
 		}
 	}
-  
+
 sub get_path_components {
 	use Config;
 	my $separator = $Config{path_sep} // ':';
