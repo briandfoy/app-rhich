@@ -27,7 +27,7 @@ that match the regular expression given as the argument.
 
 =head1 COPYRIGHT AND LICENCE
 
-Copyright © 2013-2015, brian d foy <bdfoy@cpan.org>. All rights reserved.
+Copyright © 2013-2018, brian d foy <bdfoy@cpan.org>. All rights reserved.
 
 You may use this under the same terms as Perl itself.
 
