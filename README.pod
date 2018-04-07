@@ -2,6 +2,16 @@
 
 =encoding utf8
 
+=for HTML <a href="https://travis-ci.org/briandfoy/app-rhich"><img src="https://travis-ci.org/briandfoy/app-rhich.svg?branch=master"></a>
+
+=for HTML  <a href="https://ci.appveyor.com/project/briandfoy/app-rhich"><img src="https://ci.appveyor.com/api/projects/status/6ksphspys508ydbl?svg=true"></a>
+
+=for HTML <a href="http://www.metacpan.org/module/App::rhich"><img src="https://img.shields.io/cpan/v/App::rhich.svg" /></A>
+
+=for HTML <a href='https://coveralls.io/github/briandfoy/App-rhich?branch=master'><img src='https://coveralls.io/repos/github/briandfoy/App-rhich/badge.svg?branch=master' alt='Coverage Status' /></a>
+
+=for HTML <a href="https://github.com/briandfoy/app-rhich/blob/master/LICENSE"><img src="https://img.shields.io/cpan/l/app-rhich.svg" /></a>
+
 =head1 The App::rhich module
 
 This is the I<README> for the L<App::rhich> Perl module. The rhich
