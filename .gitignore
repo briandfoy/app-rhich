@@ -9,7 +9,6 @@
 *.tar
 *.tar.gz
 *.tgz
-*.yml
 *.zip
 .DS_Store
 .last_cover_stats
