@@ -57,7 +57,6 @@ sub run {
 	unless( defined $ARGV[0] ) {
 		warn "Need a pattern to search!\n";
 		}
-	print "regex is <$ARGV[0]>";
 	my $regex = eval { qr/$ARGV[0]/ };
 	unless( defined $regex ) {
 		die "Could not compile regex! $@\n";
