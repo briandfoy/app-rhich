@@ -29,7 +29,7 @@ that match the regular expression given sas the argument.
 
 Copyright © 2013-2018, brian d foy <bdfoy@cpan.org>. All rights reserved.
 
-You may use this under the same terms as Perl itself.
+You may use this under the same terms as the Artistic License 2.0.
 
 =head1 AUTHOR
 
