@@ -4,9 +4,9 @@ use v5.10;
 package App::rhich;
 use strict;
 use warnings;
-use vars qw($VERSION);
 
-$VERSION = '1.003';
+
+our $VERSION = '1.004';
 
 =encoding utf8
 
