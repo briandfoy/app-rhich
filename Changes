@@ -1,5 +1,8 @@
 Revision history for Perl module App::rhich
 
+1.004 2018-04-24T12:31:13Z
+	* Remove a leftover debugging statement
+
 1.003 2018-04-24T12:14:28Z
 	* Clarify that it's the Artistic License 2.0
 	* Move to a full modulino
