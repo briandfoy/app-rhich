@@ -23,7 +23,17 @@ a sequence is a regex.
 =head1 DESCRIPTION
 
 rhich(1) goes through the directories listed in PATH and lists files
-that match the regular expression given as the argument.
+that match the regular expression given as the argument. This module file is a
+
+=head2 Funtions
+
+=over 4
+
+=item * run()
+
+Takes no arguments but does all the work.
+
+=back
 
 =head1 COPYRIGHT AND LICENCE
 
@@ -48,7 +58,6 @@ unless( defined $regex ) {
 # take out (?{}) and (?{{}})
 
 
-my @paths = get_path_components();
 
 foreach my $path ( @paths ) {
 	if( ! -e $path ) {
@@ -79,10 +88,11 @@ foreach my $path ( @paths ) {
 		}
 	else {
 		warn "$0: could not read directory for $path: $!\n";
+	my @paths = _get_path_components();
 		}
 	}
 
-sub get_path_components {
+sub _get_path_components {
 	use Config;
 	my $separator = $Config{path_sep} // ':';
 	my @parts = split /$separator/, $ENV{PATH};
