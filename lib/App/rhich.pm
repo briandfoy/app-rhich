@@ -49,46 +49,54 @@ brian d foy, C<< <bdfoy@cpan.org> >>
 
 use File::Spec;
 
-my $regex = eval qr/$ARGV[0]/;
-unless( defined $regex ) {
-	die "Could not compile regex! $@\n";
-	}
+run() unless caller;
 
-# XXX: do some regex cleaning here
-# take out (?{}) and (?{{}})
-
-
-
-foreach my $path ( @paths ) {
-	if( ! -e $path ) {
-		warn "$0: path $path does not exist\n";
-		next;
+sub run {
+	unless( defined $ARGV[0] ) {
+		warn "Need a pattern to search!\n";
 		}
-	elsif( ! -d $path ) {
-		warn "$0: path $path is not a directory\n";
-		next;
+	print "regex is <$ARGV[0]>";
+	my $regex = eval { qr/$ARGV[0]/ };
+	unless( defined $regex ) {
+		die "Could not compile regex! $@\n";
 		}
-	elsif( opendir my $dh, $path ) {
-		my @commands =
-			map     {
-				if( -l ) {
-					my $target = readlink;
-					"$_ -> $target";
-					}
-				else { $_ }
-				}
-			grep    { -x }
-			map     { File::Spec->catfile( $path, $_ ) }
-			grep    { /$regex/ }
-			readdir $dh;
 
-		next unless @commands;
+	# XXX: do some regex cleaning here
+	# take out (?{}) and (?{{}})
 
-		print join "\n", @commands, '';
-		}
-	else {
-		warn "$0: could not read directory for $path: $!\n";
+
 	my @paths = _get_path_components();
+
+	foreach my $path ( @paths ) {
+		if( ! -e $path ) {
+			warn "$0: path $path does not exist\n";
+			next;
+			}
+		elsif( ! -d $path ) {
+			warn "$0: path $path is not a directory\n";
+			next;
+			}
+		elsif( opendir my $dh, $path ) {
+			my @commands =
+				map     {
+					if( -l ) {
+						my $target = readlink;
+						"$_ -> $target";
+						}
+					else { $_ }
+					}
+				grep    { -x }
+				map     { File::Spec->catfile( $path, $_ ) }
+				grep    { /$regex/ }
+				readdir $dh;
+
+			next unless @commands;
+
+			print join "\n", @commands, '';
+			}
+		else {
+			warn "$0: could not read directory for $path: $!\n";
+			}
 		}
 	}
 
@@ -97,3 +105,5 @@ sub _get_path_components {
 	my $separator = $Config{path_sep} // ':';
 	my @parts = split /$separator/, $ENV{PATH};
 	}
+
+1;
