@@ -1,4 +1,6 @@
 #!/usr/bin/perl
+use v5.10;
+
 package App::rhich;
 use strict;
 use warnings;
