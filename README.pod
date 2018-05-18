@@ -34,17 +34,8 @@ name instead of the file location:
 
 	% perldoc App::rhich
 
-You can read the documentation and inspect the meta data on one of the
-CPAN web interfaces, such as L<CPAN Search|http://search.cpan.org/dist/App-rhich> or
-L<MetaCPAN|http://www.metacpan.org/module/App::rhich>:
-
-=over 4
-
-=item *	L<http://search.cpan.org/dist/App-rhich>
-
-=item *	L<http://www.metacpan.org/module/App::rhich>
-
-=back
+You can read the documentation and inspect the meta data at
+L<MetaCPAN|http://www.metacpan.org/module/App::rhich>.
 
 The standard module documentation has example uses in the SYNOPSIS
 section, but you can also look in the I<examples/> directory (if it's
