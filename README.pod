@@ -6,7 +6,7 @@
 
 =for HTML  <a href="https://ci.appveyor.com/project/briandfoy/app-rhich"><img src="https://ci.appveyor.com/api/projects/status/6ksphspys508ydbl?svg=true"></a>
 
-=for HTML <a href="http://www.metacpan.org/module/App::rhich"><img src="https://img.shields.io/cpan/v/App::rhich.svg" /></A>
+=for HTML <a href="https://metacpan.org/pod/App::rhich"><img src="https://img.shields.io/cpan/v/App::rhich.svg" /></A>
 
 =for HTML <a href='https://coveralls.io/github/briandfoy/App-rhich?branch=master'><img src='https://coveralls.io/repos/github/briandfoy/App-rhich/badge.svg?branch=master' alt='Coverage Status' /></a>
 
@@ -25,7 +25,7 @@ to read one again for any Perl module.
 
 To read about L<App::rhich>, look at the embedded documentation
 in the module itself. Inside the distribution, you can format it
-with L<perldoc|http://perldoc.perl.org/perldoc.html>:
+with L<perldoc|https://perldoc.perl.orgperldoc.html>:
 
 	% perldoc lib/App/rhich.pm
 
@@ -35,7 +35,7 @@ name instead of the file location:
 	% perldoc App::rhich
 
 You can read the documentation and inspect the meta data at
-L<MetaCPAN|http://www.metacpan.org/module/App::rhich>.
+L<MetaCPAN|https://metacpan.org/pod/App::rhich>.
 
 The standard module documentation has example uses in the SYNOPSIS
 section, but you can also look in the I<examples/> directory (if it's
