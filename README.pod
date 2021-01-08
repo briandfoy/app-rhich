@@ -2,8 +2,6 @@
 
 =encoding utf8
 
-=for HTML <a href="https://travis-ci.org/briandfoy/app-rhich"><img src="https://travis-ci.org/briandfoy/app-rhich.svg?branch=master"></a>
-
 =for HTML  <a href="https://ci.appveyor.com/project/briandfoy/app-rhich"><img src="https://ci.appveyor.com/api/projects/status/6ksphspys508ydbl?svg=true"></a>
 
 =for HTML <a href="https://metacpan.org/pod/App::rhich"><img src="https://img.shields.io/cpan/v/App::rhich.svg" /></A>
