@@ -2,7 +2,13 @@
 
 =encoding utf8
 
-=for HTML  <a href="https://ci.appveyor.com/project/briandfoy/app-rhich"><img src="https://ci.appveyor.com/api/projects/status/6ksphspys508ydbl?svg=true"></a>
+=for HTML <a href="../../actions?query=workflow%3Amacos"><img src="../../workflows/macos/badge.svg"></a>
+
+=for HTML <a href="../../actions?query=workflow%3Aubuntu"><img src="../../workflows/ubuntu/badge.svg"></a>
+
+=for HTML <a href="../../actions?query=workflow%3Awindows"><img src="../../workflows/windows/badge.svg"></a>
+
+=for HTML <a href="https://ci.appveyor.com/project/briandfoy/app-rhich"><img src="https://ci.appveyor.com/api/projects/status/6ksphspys508ydbl?svg=true"></a>
 
 =for HTML <a href="https://metacpan.org/pod/App::rhich"><img src="https://img.shields.io/cpan/v/App::rhich.svg" /></A>
 
