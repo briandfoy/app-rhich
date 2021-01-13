@@ -13,8 +13,7 @@ rhich - which(1) with a regex
 
 =head1 SYNOPSIS
 
-Run this program like you would which(1), but give is a regex. Even
-a sequence is a regex.
+Run this program like you would which(1), but give is a regex.
 
 	% rhich perl
 	% rhich 'p.*rl'

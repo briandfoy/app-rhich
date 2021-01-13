@@ -25,7 +25,8 @@ a sequence is a regex.
 =head1 DESCRIPTION
 
 rhich(1) goes through the directories listed in PATH and lists files
-that match the regular expression given as the argument. This module file is a
+that match the regular expression given as the argument. This module file
+is a modulino that can act as both a script and a module.
 
 =head2 Funtions
 
