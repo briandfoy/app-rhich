@@ -20,7 +20,7 @@ Run this program like you would which(1), but give is a Perl regex. Even
 a sequence is a regex.
 
 	% rhich perl
-	% rhich p.*rl
+	% rhich 'p.*rl'
 
 =head1 DESCRIPTION
 
