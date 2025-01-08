@@ -1,5 +1,9 @@
 Revision history for Perl module App::rhich
 
+1.006 2025-01-08T03:05:31Z
+	* first release of a little program I use instead of which(1).
+	My version takes a regex and looks in all the directories.
+
 1.006 2022-01-08T08:56:01Z
 	* First release, I guess? I use this as a pattern-aware which(1)-like
 	utility. 
