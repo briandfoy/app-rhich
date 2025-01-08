@@ -25,13 +25,13 @@ that match the regular expression given sas the argument.
 
 =head1 COPYRIGHT AND LICENCE
 
-Copyright © 2013-2025, brian d foy <bdfoy@cpan.org>. All rights reserved.
+Copyright © 2013-2025, brian d foy <briandfoy@pobox.com>. All rights reserved.
 
 You may use this under the same terms as the Artistic License 2.0.
 
 =head1 AUTHOR
 
-brian d foy, C<< <bdfoy@cpan.org> >>
+brian d foy, C<< <briandfoy@pobox.com> >>
 
 =cut
 
