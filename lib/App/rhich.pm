@@ -40,13 +40,13 @@ Takes no arguments but does all the work.
 
 =head1 COPYRIGHT AND LICENCE
 
-Copyright © 2013-2023, brian d foy <bdfoy@cpan.org>. All rights reserved.
+Copyright © 2013-2025, brian d foy <briandfoy@pobox.com>. All rights reserved.
 
 You may use this under the terms of the Artistic License 2.0.
 
 =head1 AUTHOR
 
-brian d foy, C<< <bdfoy@cpan.org> >>
+brian d foy, C<< <briandfoy@pobox.com> >>
 
 =cut
 
